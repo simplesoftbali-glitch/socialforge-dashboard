@@ -45,9 +45,9 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
 
   <div class="grid grid-cols-2 md:grid-cols-4 gap-3 mb-5">
     <div class="card p-4"><div class="text-2xl font-extrabold" style="color:var(--emerald)">15</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">Instagram Posts</div></div>
-    <div class="card p-4"><div class="text-2xl font-extrabold">28</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">TikTok Videos</div></div>
-    <div class="card p-4"><div class="text-2xl font-extrabold" style="color:var(--blue)">22</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">Hari Aktif</div></div>
-    <div class="card p-4"><div class="text-2xl font-extrabold" style="color:var(--gold)">1548</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">Log Entries</div></div>
+    <div class="card p-4"><div class="text-2xl font-extrabold">29</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">TikTok Videos</div></div>
+    <div class="card p-4"><div class="text-2xl font-extrabold" style="color:var(--blue)">23</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">Hari Aktif</div></div>
+    <div class="card p-4"><div class="text-2xl font-extrabold" style="color:var(--gold)">1584</div><div class="text-xs font-semibold mt-1" style="color:var(--muted)">Log Entries</div></div>
   </div>
 
   <div class="card mb-5">
@@ -66,20 +66,20 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
           <div class="text-xs mono mt-1" style="color:var(--muted)">Grok via Nous Portal (free)</div>
           <div class="mt-2"><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot" style="background:#10b981"></span>OK</span></div>
         </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;">
-          <div class="node-num info">3</div>
+          <div class="node-num ok">3</div>
           <div class="font-bold text-xs">Generate Image</div>
           <div class="text-xs mono mt-1" style="color:var(--muted)">Gemini Web</div>
-          <div class="mt-2"><span class="chip" style="background:#f1f5f9;color:#64748b"><span class="dot" style="background:#94a3b8"></span>IDLE</span></div>
-        </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;">
-          <div class="node-num info">4</div>
+          <div class="mt-2"><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot" style="background:#10b981"></span>OK</span></div>
+        </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;border-color:var(--emerald);border-width:2px">
+          <div class="node-num ok">4</div>
           <div class="font-bold text-xs">Publish IG</div>
           <div class="text-xs mono mt-1" style="color:var(--muted)">Graph API</div>
-          <div class="mt-2"><span class="chip" style="background:#f1f5f9;color:#64748b"><span class="dot" style="background:#94a3b8"></span>IDLE</span></div>
-        </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;">
-          <div class="node-num info">5</div>
+          <div class="mt-2"><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot" style="background:#10b981"></span>OK</span></div>
+        </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;border-color:var(--gold);border-width:2px">
+          <div class="node-num warn">5</div>
           <div class="font-bold text-xs">Publish TikTok</div>
-          <div class="text-xs mono mt-1" style="color:var(--muted)">no queue</div>
-          <div class="mt-2"><span class="chip" style="background:#f1f5f9;color:#64748b"><span class="dot" style="background:#94a3b8"></span>IDLE</span></div>
+          <div class="text-xs mono mt-1" style="color:var(--muted)">queued → trigger</div>
+          <div class="mt-2"><span class="chip" style="background:#fef3c7;color:#b45309"><span class="dot" style="background:#f59e0b"></span>ASYNC</span></div>
         </div><div class="arr">&rarr;</div><div class="node" style="flex:1 1 130px;min-width:130px;">
           <div class="node-num ok">6</div>
           <div class="font-bold text-xs">Laporan WA</div>
@@ -88,12 +88,12 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
         </div>
       </div>
     </div>
-    
+    <div class="px-4 py-3 text-xs" style="background:#fffbeb;border-top:1px solid #fde68a;color:#92400e">Step 5 TikTok berjalan di background (Popen) agar scheduler tidak timeout.</div>
   </div>
 
   <div class="card mb-5">
     <div class="hdr"><span class="font-bold text-sm">System Health</span></div>
-    <div class="divide-y" style="border-color:#e2e8f0"><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">WA Gateway <span class="mono text-xs" style="color:var(--muted)">:3100</span></div><div class="text-xs mono" style="color:var(--muted)">bridge.js &mdash; Hermes</div></div><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot pulse" style="background:#10b981"></span>CONNECTED</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">wa-gateway <span class="mono text-xs" style="color:var(--muted)">:3000</span></div><div class="text-xs mono" style="color:var(--muted)">app.js</div></div><span class="chip" style="background:#fee2e2;color:#b91c1c"><span class="dot" style="background:#ef4444"></span>OFFLINE</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">AutoSocial Daemon</div><div class="text-xs mono" style="color:var(--muted)">cli.js daemon (daily 13:00 safety net)</div></div><span class="chip" style="background:#fee2e2;color:#b91c1c"><span class="dot" style="background:#ef4444"></span>OFFLINE</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">TikTok Uploader</div><div class="text-xs mono" style="color:var(--muted)">tiktok_uploader_full.py (bg process)</div></div><span class="chip" style="background:#fee2e2;color:#b91c1c"><span class="dot" style="background:#ef4444"></span>OFFLINE</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">Image Engine</div><div class="text-xs mono" style="color:var(--muted)">Gemini Web (Playwright/Xvfb)</div></div><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot pulse" style="background:#10b981"></span>OK</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">TikTok Queue</div><div class="text-xs mono" style="color:var(--muted)">AutoSocial/queue/bardi — event-driven trigger</div></div><span class="chip" style="background:#d1fae5;color:#065f46">0 PENDING • 22 POSTED</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">WA Target</div><div class="text-xs mono" style="color:var(--muted)">6285792834783@s.whatsapp.net</div></div><span class="chip" style="background:#e0e7ff;color:#3730a3">DM</span></div></div>
+    <div class="divide-y" style="border-color:#e2e8f0"><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">WA Gateway <span class="mono text-xs" style="color:var(--muted)">:3100</span></div><div class="text-xs mono" style="color:var(--muted)">bridge.js &mdash; Hermes</div></div><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot pulse" style="background:#10b981"></span>CONNECTED</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">wa-gateway <span class="mono text-xs" style="color:var(--muted)">:3000</span></div><div class="text-xs mono" style="color:var(--muted)">app.js</div></div><span class="chip" style="background:#fee2e2;color:#b91c1c"><span class="dot" style="background:#ef4444"></span>OFFLINE</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">AutoSocial Daemon</div><div class="text-xs mono" style="color:var(--muted)">cli.js daemon (daily 13:00 safety net)</div></div><span class="chip" style="background:#fee2e2;color:#b91c1c"><span class="dot" style="background:#ef4444"></span>OFFLINE</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">TikTok Uploader</div><div class="text-xs mono" style="color:var(--muted)">tiktok_uploader_full.py (bg process)</div></div><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot pulse" style="background:#10b981"></span>RUNNING</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">Image Engine</div><div class="text-xs mono" style="color:var(--muted)">Gemini Web (Playwright/Xvfb)</div></div><span class="chip" style="background:#dcfce7;color:#15803d"><span class="dot pulse" style="background:#10b981"></span>OK</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">TikTok Queue</div><div class="text-xs mono" style="color:var(--muted)">AutoSocial/queue/bardi — event-driven trigger</div></div><span class="chip" style="background:#d1fae5;color:#065f46">1 PENDING • 22 POSTED</span></div><div class="flex items-center justify-between p-3"><div><div class="font-semibold text-sm">WA Target</div><div class="text-xs mono" style="color:var(--muted)">6285792834783@s.whatsapp.net</div></div><span class="chip" style="background:#e0e7ff;color:#3730a3">DM</span></div></div>
   </div>
 
   <div class="card mb-5">
@@ -117,38 +117,38 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
           </td>
         </tr></table>
       <div class="px-4 py-2.5 text-xs" style="background:#f8fafc;border-top:1px solid #e2e8f0;color:#64748b">
-        Dibaca terakhir: 2026-10-20 12:00:12 · batas 12.000 karakter/file
+        Dibaca terakhir: 2026-10-22 12:07:15 · batas 12.000 karakter/file
       </div>
     </div>
   
   <div class="card mb-5">
           <div class="hdr"><span class="font-bold text-sm">Topik Run Terakhir</span></div>
-          <ul class="p-4 text-xs space-y-1.5" style="color:var(--slate)"><li>Update Smart Home Bali…</li></ul>
+          <ul class="p-4 text-xs space-y-1.5" style="color:var(--slate)"><li>Promo Spesial Smart Home BARDI Bali: Diskon Produk T…</li></ul>
         </div>
 
   <div class="card mb-5">
     <div class="hdr"><span class="font-bold text-sm">Log Activity per Hari</span></div>
     <div class="p-4 space-y-3"><div>
-          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">13 Oct</span><span class="mono" style="color:var(--muted)">35 entries</span></div>
+          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">14 Oct</span><span class="mono" style="color:var(--muted)">35 entries</span></div>
           <div class="bar"><i style="width:47%;background:#94a3b8"></i></div>
         </div><div>
-          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">14 Oct</span><span class="mono" style="color:var(--muted)">35 entries</span></div>
+          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">15 Oct</span><span class="mono" style="color:var(--muted)">35 entries</span></div>
           <div class="bar"><i style="width:47%;background:#6366f1"></i></div>
         </div><div>
-          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">15 Oct</span><span class="mono" style="color:var(--muted)">35 entries</span></div>
-          <div class="bar"><i style="width:47%;background:#f59e0b"></i></div>
-        </div><div>
           <div class="flex justify-between text-xs mb-1"><span class="font-semibold">16 Oct</span><span class="mono" style="color:var(--muted)">74 entries</span></div>
-          <div class="bar"><i style="width:100%;background:#10b981"></i></div>
+          <div class="bar"><i style="width:100%;background:#f59e0b"></i></div>
         </div><div>
           <div class="flex justify-between text-xs mb-1"><span class="font-semibold">18 Oct</span><span class="mono" style="color:var(--muted)">37 entries</span></div>
-          <div class="bar"><i style="width:50%;background:#ec4899"></i></div>
+          <div class="bar"><i style="width:50%;background:#10b981"></i></div>
         </div><div>
           <div class="flex justify-between text-xs mb-1"><span class="font-semibold">19 Oct</span><span class="mono" style="color:var(--muted)">37 entries</span></div>
-          <div class="bar"><i style="width:50%;background:#8b5cf6"></i></div>
+          <div class="bar"><i style="width:50%;background:#ec4899"></i></div>
         </div><div>
           <div class="flex justify-between text-xs mb-1"><span class="font-semibold">20 Oct</span><span class="mono" style="color:var(--muted)">38 entries</span></div>
-          <div class="bar"><i style="width:51%;background:#0ea5e9"></i></div>
+          <div class="bar"><i style="width:51%;background:#8b5cf6"></i></div>
+        </div><div>
+          <div class="flex justify-between text-xs mb-1"><span class="font-semibold">22 Oct</span><span class="mono" style="color:var(--muted)">36 entries</span></div>
+          <div class="bar"><i style="width:48%;background:#0ea5e9"></i></div>
         </div></div>
   </div>
 
@@ -174,8 +174,11 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
 
   <div class="card">
     <div class="hdr"><span class="font-bold text-sm">TikTok Videos</span>
-      <span class="tag" style="background:#0f172a;color:#fff">28 POSTED</span></div>
+      <span class="tag" style="background:#0f172a;color:#fff">29 POSTED</span></div>
     <div class="divide-y" style="border-color:#e2e8f0"><div class="flex items-center justify-between p-3">
+          <div><div class="mono text-sm font-semibold">SF-20261022-001</div><div class="text-xs" style="color:var(--muted)">22 Oct 2026 &middot; -</div></div>
+          <span class="chip" style="background:#dcfce7;color:#15803d">POSTED</span>
+        </div><div class="flex items-center justify-between p-3">
           <div><div class="mono text-sm font-semibold">SF-20261019-001</div><div class="text-xs" style="color:var(--muted)">19 Oct 2026 &middot; 2549 KB</div></div>
           <span class="chip" style="background:#dcfce7;color:#15803d">POSTED</span>
         </div><div class="flex items-center justify-between p-3">
@@ -263,7 +266,7 @@ body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--n
   </div>
 
   <p class="text-center text-xs mt-6" style="color:var(--muted)">
-    Updated <span class="mono">21 Oct 2026 · 16:00 WITA</span>
+    Updated <span class="mono">22 Oct 2026 · 12:08 WITA</span>
     &middot; auto-generated dari <span class="mono">data/scheduler.log</span>
   </p>
 </div>
